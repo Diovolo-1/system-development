@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body style="background-color: rgb(63, 63, 63);">
+    <div style="width: 600px; margin: auto;" >
+
+        <form action="pagina.php" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            <p style="color: white;">
+                <input type="text" name="nome" id="nome" 
+                placeholder="Seu nome" maxlength="50">
+                <label for="nome">Nome</label>
+
+                <input type="email" name="email" id="email" placeholder="Coloque seu email">
+                <label for="email">Email</main></label>
+            </p>
+            <p style="color: white;">
+                <input type="number" name="num" id="num" min="5" max="20" >
+                <label for="num">Número</label>
+
+                <input type="password" name="senha" id="senha" required maxlength="6" size="10">
+                <label for="senha">Senha</label>
+            </p>
+            <p style="color: white;">
+                <input type="date" name="data" id="data">
+                <label for="data">Data de Nascimento</label>
+
+                <input type="time" name="hora" id="hora">
+                <label for="hora">Horário</label>
+            </p>
+        </fieldset>
+            <p style="color: white;">
+                <input type="color" name="cor" id="cor">
+                <label for="cor"> Escolha uma cor</label>
+                <input type="file" name="anexo" id="anexo">
+                <label for="anexo">Enviar arquivo</label>
+            </p>
+            <p style="color: white;">
+                Estado civil <br>
+                <input type="radio" name="estadocivil" value="solteiro"> solteiro(a)
+                <input type="radio" name="estadocivil" value="cadado">   cadado(a)
+                <input type="radio" name="estadocivil" value="separado"> separado(a)
+                <input type="radio" name="estadocivil" value="viuvo">    viuvo(a)
+            </p>
+            <p style="color: white;">
+                <input type="checkbox" name="musica" value="POP"> POP
+                <input type="checkbox" name="musica" value="rock"> rock
+                <input type="checkbox" name="musica" value="jazz"> jazz
+                <input type="checkbox" name="musica" value="sertanojo"> sertanojo
+                <input type="checkbox" name="musica" value="samba"> samba
+                <input type="checkbox" name="musica" value="mpb"> mpb
+                <input type="checkbox" name="musica" value="blues"> blues
+            </p>
+            <p style="color: white">
+                escolha um automovel
+                <select name="carros" multiple>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Astra">Astra</option>
+                    <option value="Fiat" selected>Fiat</option>
+                    <option value="Audi">Audi</option>
+                </select>
+                <p>
+                    <textarea name="msg" id="" cols="20" rows="10">Prezada ETEC,</textarea>
+                    <br>
+                    <button type="button" onclick="alert('Formulário HTML')">
+                    Clique aqui!
+                </button>
+                </p>
+            </p>
+            <p style="color: white;">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </p>
+        </form>
+    </div>
+</body>
+
+</html>
